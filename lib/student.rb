@@ -8,4 +8,10 @@ class Student < User
     @knowledge = []
   end
 
+  def learn(knowledge)
+    knowledge.each do |idea|
+      @knowledge << idea.self
+    end
+  end
+
 end
